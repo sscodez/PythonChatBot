@@ -3,7 +3,7 @@ from chatgpt import get_response
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, resources={r"/predict": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/predict": {"origins": "https://ai-clinic-chatbot.vercel.app"}})
 
 @app.get("/")
 def index_get():
